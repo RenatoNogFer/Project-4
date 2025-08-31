@@ -10,14 +10,14 @@ Utilizou-se ao final de um modelo LGBM com o objetivo de gerar *scores* que seja
 
 ## Métricas-Chave
 
-A descrição do projeto afirma "O nosso objetivo aqui é mapear e alertar os clientes fraudadores trazendo o mínimo de impacto e o máximo de retorno financeiro à operação do cliente (portanto, alertando poucos casos, mas com alta precisão).". Mediante isso, estaríamos olhando primariamente para:
+A descrição do projeto afirma "O nosso objetivo aqui é mapear e alertar os clientes fraudadores trazendo o mínimo de impacto e o máximo de retorno financeiro à operação do cliente (portanto, alertando poucos casos, mas com alta precisão).". Mediante isso, comecei olhando primariamente para:
 
 * Precisão
 * Recall
 * F-beta Score
 * AUC-PR
 
-Porém, trazendo para o contexto de problemas de crédito e levando em conta a natureza desbalanceada do conjunto de dados para o problema, adotamos métricas que buscam mostrar a capacidade da variável de risco gerada pelo modelo, o *score*, de discernir os casos positivos dos negativos na base de dados, priorizando então:
+Porém, trazendo para o contexto de problemas de crédito e levando em conta a natureza desbalanceada do conjunto de dados para o problema, adotou-se métricas que buscam mostrar a capacidade da variável de risco gerada pelo modelo, o *score*, de discernir os casos positivos dos negativos na base de dados, priorizando então:
 
 * KS%
 * Lift
@@ -29,8 +29,10 @@ Além disso, propõe-se uma métrica de estimativa de retorno financeiro do mode
 [X] Análise exploratória dos dados<br>
 [X] Modelagem<br>
 [X] Validação<br>
-[X] Apresentação
-[ ] Refatoração
+[X] Apresentação<br>
+[X] Refatoração
+
+Assumindo mais tempo, a etapa imediatamente seguinte ao ponto em que o projeto foi parado seria explicabilidade, ou seja, utilização de ferramentas como ```SHAP```, de forma a entender a importância das features selecionadas como também identificar possíveis "muletas" que o modelo possa estar utilizando. Também seria interessante experimentação com outros modelos buscando tanto maximizar o resultado quanto validação de escolhas tomadas, como a escolha pelo modelo LGBM.
 
 ## Links relevantes
 
