@@ -4,6 +4,10 @@
 
 Este repositório foi criado para o desenvolvimento de uma solução para o desafio técnico "Projeto 4: modelo de propensão a fraude em financiamento veicular", cuja essência é a detecção de fraudes de pagamento através da previsão do ```First Payment Default```, o não pagamento da primeira parcela do financiamento.
 
+## Execução
+
+O código inteiro do projeto está disponibilizado no arquivo ```main.ipynb```. Para reproduzir os resultados, basta executar o arquivo por completo. Ressalto que o projeto foi executado em máquina pessoal, ou seja, sem utilização de ambiente colab, utilizando de ambiente Conda para estabelecer ambiente para o kernel. Por essa razão, disponibiliza-se arquivo ```requirements.txt``` com o ambiente utilizado. A versão do Python utilizada é a ```3.13.5```.
+
 ## Modelo Final
 
 Utilizou-se ao final de um modelo LGBM com o objetivo de gerar *scores* que sejam proporcionais ao risco envolvido naquele financiamento, i.e, maior o *score*, maior o risco envolvendo aquele financiamento.
